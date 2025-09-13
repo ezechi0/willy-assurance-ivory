@@ -6,6 +6,7 @@ import TeamSection from '@/components/TeamSection';
 import FAQSection from '@/components/FAQSection';
 import ContactSection from '@/components/ContactSection';
 import FloatingChat from '@/components/FloatingChat';
+import WhatsAppButton from '@/components/WhatsAppButton';
 
 const Index = () => {
   return (
@@ -65,6 +66,7 @@ const Index = () => {
       </footer>
       
       <FloatingChat />
+      <WhatsAppButton />
     </div>
   );
 };
