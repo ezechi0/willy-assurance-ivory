@@ -13,6 +13,10 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        'poppins': ['Poppins', 'sans-serif'],
+        'montserrat': ['Montserrat', 'sans-serif'],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -22,6 +26,14 @@ export default {
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
+          light: "hsl(var(--primary-light))",
+          glow: "hsl(var(--primary-glow))",
+        },
+        gold: {
+          DEFAULT: "hsl(var(--gold))",
+          light: "hsl(var(--gold-light))",
+          dark: "hsl(var(--gold-dark))",
+          foreground: "hsl(var(--gold-foreground))",
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
@@ -58,6 +70,12 @@ export default {
           ring: "hsl(var(--sidebar-ring))",
         },
       },
+      boxShadow: {
+        'premium': 'var(--shadow-premium)',
+        'gold': 'var(--shadow-gold)', 
+        'card': 'var(--shadow-card)',
+        'glow': 'var(--shadow-glow)',
+      },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
@@ -80,10 +98,36 @@ export default {
             height: "0",
           },
         },
+        "float": {
+          "0%, 100%": { transform: "translateY(0px)" },
+          "50%": { transform: "translateY(-10px)" },
+        },
+        "glow": {
+          "from": { boxShadow: "0 0 20px hsl(var(--gold) / 0.3)" },
+          "to": { boxShadow: "0 0 30px hsl(var(--gold) / 0.6)" },
+        },
+        "slideUp": {
+          "from": {
+            opacity: "0",
+            transform: "translateY(30px)",
+          },
+          "to": {
+            opacity: "1",
+            transform: "translateY(0)",
+          },
+        },
+        "fadeIn": {
+          "from": { opacity: "0" },
+          "to": { opacity: "1" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "float": "float 6s ease-in-out infinite",
+        "glow": "glow 2s ease-in-out infinite alternate",
+        "slide-up": "slideUp 0.8s ease-out forwards",
+        "fade-in": "fadeIn 1s ease-out forwards",
       },
     },
   },
