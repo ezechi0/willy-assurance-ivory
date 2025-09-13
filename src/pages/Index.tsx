@@ -6,6 +6,7 @@ import TeamSection from '@/components/TeamSection';
 import FAQSection from '@/components/FAQSection';
 import ContactSection from '@/components/ContactSection';
 import FloatingChat from '@/components/FloatingChat';
+import WhatsAppFloating from '@/components/WhatsAppFloating';
 
 
 const Index = () => {
@@ -66,6 +67,7 @@ const Index = () => {
       </footer>
       
       <FloatingChat />
+      <WhatsAppFloating />
     </div>
   );
 };
