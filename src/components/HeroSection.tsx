@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import heroImage from '@/assets/hero-image.jpg';
-import leadwayLogo from '@/assets/leadway-logo.png';
+import leadwayLogo from '@/assets/leadway-official-logo.png';
 
 const HeroSection = () => {
   const scrollToContact = () => {

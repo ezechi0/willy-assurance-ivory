@@ -72,13 +72,6 @@ const Navigation = () => {
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gold transition-colors duration-300 group-hover:w-full"></span>
             </button>
           </div>
-          
-          <Button 
-            onClick={() => scrollToSection('contact')}
-            className="bg-gradient-gold text-gold-foreground font-poppins font-semibold px-6 py-2 hover:shadow-glow transition-all duration-300 animate-glow"
-          >
-            Devis Gratuit
-          </Button>
         </div>
       </div>
     </nav>

@@ -186,14 +186,14 @@ const ContactSection = () => {
           </h3>
           <div className="bg-white rounded-2xl shadow-premium overflow-hidden">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3972.0845487891076!2d-4.030726284595206!3d5.313926496257476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfc1eb7f5ac5b3e3%3A0x8e8b8b8b8b8b8b8b!2sYabayo%2C%20pr%C3%A8s%20de%20la%20gare%20UTB%2C%20Abidjan%2C%20C%C3%B4te%20d%27Ivoire!5e0!3m2!1sfr!2sfr!4v1635789012345!5m2!1sfr!2sfr"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3971.8629441234567!2d-4.0123456789012346!3d5.321098765432109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNcKwMTknMTYuMCJOIDTCsDAwJzQ0LjQiVw!5e0!3m2!1sfr!2sci!4v1699123456789!5m2!1sfr!2sci&q=Yabayo+gare+UTB+Abidjan"
               width="100%"
               height="400"
               style={{ border: 0 }}
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="Willy Assurance - Yabayo près de la gare UTB, Abidjan"
+              title="Willy Assurance - Yabayo près de la gare UTB"
             ></iframe>
           </div>
           <div className="mt-4 text-center">
