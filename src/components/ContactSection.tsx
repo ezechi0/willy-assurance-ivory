@@ -178,33 +178,6 @@ const ContactSection = () => {
             </CardContent>
           </Card>
         </div>
-        
-        {/* Google Maps */}
-        <div className="mt-16 animate-fade-in">
-          <h3 className="font-montserrat font-bold text-2xl text-primary text-center mb-8">
-            Nous trouver
-          </h3>
-          <div className="bg-white rounded-2xl shadow-premium overflow-hidden">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3971.8629441234567!2d-4.0123456789012346!3d5.321098765432109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNcKwMTknMTYuMCJOIDTCsDAwJzQ0LjQiVw!5e0!3m2!1sfr!2sci!4v1699123456789!5m2!1sfr!2sci&q=Yabayo+gare+UTB+Abidjan"
-              width="100%"
-              height="400"
-              style={{ border: 0 }}
-              allowFullScreen
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              title="Willy Assurance - Yabayo près de la gare UTB"
-            ></iframe>
-          </div>
-          <div className="mt-4 text-center">
-            <p className="font-poppins text-sm text-muted-foreground">
-              📍 <strong className="text-primary">Adresse précise :</strong> Yabayo, près de la gare UTB, Abidjan
-            </p>
-            <p className="font-poppins text-xs text-muted-foreground mt-1">
-              Facilement accessible en transport en commun via la gare UTB
-            </p>
-          </div>
-        </div>
       </div>
     </section>
   );
