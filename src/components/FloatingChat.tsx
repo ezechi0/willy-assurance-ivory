@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { MessageCircle, X } from 'lucide-react';
+import ChatBot from './ChatBot';
 
 const FloatingChat = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,20 +10,10 @@ const FloatingChat = () => {
     <>
       {/* Bouton Chat principal */}
       <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end space-y-4">
-        {/* Options de chat (visible quand isOpen est true) */}
+        {/* Chat Bot (visible quand isOpen est true) */}
         {isOpen && (
           <div className="animate-slide-up">
-            {/* Chat en direct */}
-            <Button
-              className="flex items-center space-x-3 bg-primary hover:bg-primary-light text-white px-4 py-3 rounded-full shadow-lg hover-lift"
-              onClick={() => {
-                // Simuler l'ouverture d'un chat en direct
-                alert("Chatbot en cours de développement ! Nous serons bientôt disponibles pour vous aider.");
-              }}
-            >
-              <MessageCircle className="w-6 h-6" />
-              <span className="font-poppins font-medium">Chat assistant</span>
-            </Button>
+            <ChatBot />
           </div>
         )}
 
