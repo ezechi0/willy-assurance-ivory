@@ -14,7 +14,84 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      demandes_devis: {
+        Row: {
+          annee_vehicule: number
+          antecedents_sinistres: boolean | null
+          created_at: string
+          details_sinistres: string | null
+          email: string
+          id: string
+          marque_vehicule: string
+          message_supplementaire: string | null
+          modele_vehicule: string
+          nom: string
+          prenom: string
+          puissance_fiscale: number | null
+          statut: string
+          telephone: string
+          type_assurance: string
+          type_vehicule: string
+          updated_at: string
+          valeur_vehicule: number | null
+        }
+        Insert: {
+          annee_vehicule: number
+          antecedents_sinistres?: boolean | null
+          created_at?: string
+          details_sinistres?: string | null
+          email: string
+          id?: string
+          marque_vehicule: string
+          message_supplementaire?: string | null
+          modele_vehicule: string
+          nom: string
+          prenom: string
+          puissance_fiscale?: number | null
+          statut?: string
+          telephone: string
+          type_assurance: string
+          type_vehicule: string
+          updated_at?: string
+          valeur_vehicule?: number | null
+        }
+        Update: {
+          annee_vehicule?: number
+          antecedents_sinistres?: boolean | null
+          created_at?: string
+          details_sinistres?: string | null
+          email?: string
+          id?: string
+          marque_vehicule?: string
+          message_supplementaire?: string | null
+          modele_vehicule?: string
+          nom?: string
+          prenom?: string
+          puissance_fiscale?: number | null
+          statut?: string
+          telephone?: string
+          type_assurance?: string
+          type_vehicule?: string
+          updated_at?: string
+          valeur_vehicule?: number | null
+        }
+        Relationships: []
+      }
+      "Formulaire de demande de devis": {
+        Row: {
+          created_at: string
+          id: number
+        }
+        Insert: {
+          created_at?: string
+          id?: number
+        }
+        Update: {
+          created_at?: string
+          id?: number
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
